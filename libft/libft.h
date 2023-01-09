@@ -6,7 +6,7 @@
 /*   By: ewolfghe <ewolfghe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/01 23:40:46 by ewolfghe          #+#    #+#             */
-/*   Updated: 2022/12/13 19:42:28 by ewolfghe         ###   ########.fr       */
+/*   Updated: 2022/12/14 14:05:03 by ewolfghe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,16 +72,16 @@ void	ft_lstclear(t_list **lst, void (*del)(void *));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 int		ft_lstsize(t_list *lst);
 
-// FT_PRINTF
-int	ft_printf(const char *str, ...);
-int	ft_putchar(char c);
-int	ft_putstr(char *str);
-int	ft_utoa(unsigned int n);
-int	ft_itoa_printf(int n);
-int	ft_putaddress(unsigned long int n);
-int	ft_puthex(unsigned long n, int flag);
-
 // GET_NEXT_LINE
 char	*get_next_line(int fd);
+
+// FT_PRINTF
+int		ft_printf(const char *str, ...);
+int		ft_putchar(char c);
+int		ft_putstr(char *str);
+int		ft_utoa(unsigned int n);
+int		ft_itoa_printf(int n);
+int		ft_putaddress(unsigned long int n);
+int		ft_puthex(unsigned long n, int flag);
 
 #endif
